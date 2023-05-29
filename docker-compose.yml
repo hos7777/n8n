@@ -50,9 +50,5 @@ services:
       - NODE_ENV=production
       - WEBHOOK_URL=https://${SUBDOMAIN}.${DOMAIN_NAME}/
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
-      - VIRTUAL_HOST=n8n.hos777.net
-      - LETSENCRYPT_HOST=n8n.hos777.net
-      - LETSENCRYPT_EMAIL=m.kakeya777@gmail.com
     volumes:
       - ${DATA_FOLDER}/.n8n:/home/node/.n8n
-      network_mode: bridge
